@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice set - 2</title>
+</head>
+<body>
+    <script>
+        let runAgain = true
+        const canDrive = (age) =>{
+            return age >= 18 ? true : false;
+        };
+
+        while (runAgain) {
+            let age = prompt("enter your age");
+            age = parseInt(age);
+
+            if (canDrive(age)) {
+                alert("you can drive");
+            }else{
+                alert("you cannot drive");
+            }
+            runAgain = confirm("do you want check others??")
+        }
+
+    </script>
+</body>
+</html>

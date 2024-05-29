@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string methods-3</title>
+</head>
+<body>
+    <h1>string methods</h1>
+    <script>
+       var x = prompt('enter the sentence to get its features');
+       var len = x.length;
+       document.write("length of the string is"+"  "+len+"<br>");
+
+       var a = x.charAt(2);
+       document.write("letter present at 2nd position is"+"  "+a+"<br>");
+
+       var str = x.substr(2);
+       document.write("string from second character is"+"  "+str+"<br>");
+
+       var str1 = x.concat("  THINKWorks");
+       document.write(" string after joining is"+"  "+str1+"<br>");
+
+       var str2 = x.substr(0,3);
+       document.write("part of string is"+"  "+str2+"<br>");
+    </script>
+</body>
+</html>

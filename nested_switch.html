@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NestedSwitch</title>
+  </head>
+  <body>
+    <h1><center>Nested switch statement example</center></h1>
+    <p>Nested switch statement example</p>
+
+    <script>
+      var num1 = prompt("enter first value");
+      var num2 = prompt("enter second value");
+
+      var operation = prompt(
+        "enter the airthmatic operation to be performed",
+        "multiplication or division"
+      );
+      switch (operation) {
+        case "multiplication":
+          document.write("Multiplication Result : " + eval(num1 * num2));
+          break;
+        case "division":
+          var type = prompt(
+            "do you want the remainder or quotient??",
+            "remainder or quotient"
+          );
+          switch (type) {
+            case "remainder":
+              document.write("Division Remainder :" + eval(num1 % num2));
+              break;
+            case "quotient":
+              document.write("division Result : " + eval(num1 / num2));
+              break;
+          }
+          break;
+
+        default:
+          document.write(
+            "retry!!" +
+              "<br>" +
+              "please enter the values as given. they are case sensitive"
+          );
+          break;
+      }
+    </script>
+  </body>
+</html>

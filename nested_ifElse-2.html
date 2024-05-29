@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nestedIfElse-2</title>
+</head>
+<body>
+    <h1><center>to check if the number is divisible by 2 and 5</center></h1>
+
+    <script>
+        var num1 = prompt("enter the number");
+        var num = parseInt(num1);
+        document.write(num ,"<br>"); 
+
+        if(num > 0){
+            if(num % 2 == 0 && num % 5 == 0){
+                alert("number is divisible by both 2 and 5");
+                document.write("number is divisible by both 2 and 5");
+            }
+            else{
+                alert("number is not divisible by both 2 and 5");
+                document.write("number is not divisible by both 2 and 5");
+            }
+
+        }else{
+            alert("enter the number greater than 0");
+        }
+    </script>
+</body>
+</html>
